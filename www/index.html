@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Business secrets</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		 <header class="header-box central-page-box">
+			<div class="header-top clearfix">
+				<p class="logo">quanto</p>
+				<p class="tagline">we know <span>the secrets of success</span></p>
+			</div>	
+		 </header>
+		<div class="menu-line">	 
+			<div class="menu central-page-box clearfix">
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Solutions</a></li>
+						<li><a href="#">Contacts</a></li>			
+					</ul>
+				</nav>	
+			</div>	 
+		</div>	 
+		<div class="my-slider central-page-box clearfix">
+			<div class="left">
+				<p>discover the</p>
+				<h1>business</h1>
+				<h2>secrets</h2>
+				<h3>for your success</h3>
+			</div>
+			<img src="images/team_photo.png" alt="Команда проекта">
+		</div>
+
+		<div class="contact-subscribe">
+			<div class="central-page-box clearfix">
+				<article>
+					<h4>customer says</h4>
+					<h5>sucess stories</h5>
+					<p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum mo lestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui</p>
+					<div class="subject clearfix">
+						<img src="images/man_photo.jpg" alt="Мужик">
+						<div class="contact-subject">
+							<p class="man"><a href="#">Valdis Mickman</a></p>
+							<p class="address"><a href="#">www.company.com</a></p>						
+						</div>
+					</div>
+				</article>
+				<article>
+					<h4>why choose us?</h4>
+					<h5>our benefits</h5>
+					<p><span>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent ves tibulum mo lestie lacus. </span></p>				
+					<p>Aenean nonummy hendrerit mauris. Pha sellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla duiuis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor </p>
+					<p class="readmore"><a href="#">Read More</a></p>				
+				</article>
+				<article>
+					<h4>news headlines</h4>
+					<h5>what's new</h5>	
+						<p><a href="#" class="links">Lorem ipsum dolor sit amet</a></p>		
+						<p><a href="#" class="links">Praesent vestibulum mo lestie lacus</a></p>
+						<p><a href="#" class="links">Aenean nonummy hendrerit </a></p>
+						<p><a href="#" class="links">Phasellus porta</a></p>
+						<div class="subscribe-form">
+							<h3>newsletter</h3>
+							<form action="#" method="post">	
+									<input type="text" placeholder="Search Here...">
+								<input type="submit" value="Ok">
+							</form>
+							<a href="#" class="unsubscribe">unsubscribe</a>
+						</div>										
+				</article>			
+			</div>
+		</div>
+		<div class="solutions-line">
+			<div class="solutions central-page-box clearfix">
+				<article>	
+					<h4>new solutions</h4>
+					<div class="solutions-control">
+					<p><a href="#" class="links">Consumer Product Strategy</a></p>
+					<p><a href="#" class="links">Customer Experience</a></p>
+					<p><a href="#" class="links">Direct Marketing</a></p>
+					<p><a href="#" class="links">eBusiness & Channel Strategy</a></p>
+					</div>
+					<p><a href="#" class="moremore">More solutions</a></p>				
+				</article>
+				<article>	
+					<h4>popular services</h4>
+					<div class="solutions-control">					
+					<p><a href="#" class="links">Analyst Relations</a></p>
+					<p><a href="#" class="links">B2B Market Research</a></p>
+					<p><a href="#" class="links">Vendor Strategy</a></p>
+					<p><a href="#" class="links">Technology Product Management</a></p>
+					</div>					
+					<p><a href="#" class="moremore">More services</a></p>					
+				</article>
+				<article>	
+					<h4>press releases</h4>
+					<div class="solutions-control">					
+					<p><a href="#" class="links">US IT Market Outlook:Q3 2009</a></p>
+					<p><a href="#" class="links">What Does IT Do For The Business?</a></p>
+					<p><a href="#" class="links">Essential Metrics For Managing IT</a></p>
+					<p><a href="#" class="links">The Customer Experience Journey</a></p>
+					</div>					
+					<p><a href="#" class="moremore">More press releases</a></p>					
+				</article>			
+			</div>
+		</div>
+		<footer class="footer-line">
+			<div class="central-page-box">
+				<p>Quanto &copy; 2009 | <a href="#">Privacy Policy</a></p>
+			</div>
+		</footer>	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>
+		function setEqualHeight(columns) { 
+			var tallestcolumn = 0; 
+			columns.each( function() { 
+				currentHeight = $(this).height(); 
+				if(currentHeight > tallestcolumn) { tallestcolumn = currentHeight; } } ); 
+				columns.height(tallestcolumn); 
+			} 
+			
+			$(document).ready(function() { setEqualHeight($(".solutions-control")); });
+	</script>
+		
+	</body>

@@ -1,0 +1,371 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнул¤ем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устран¤ем отступы между ¤чейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию дл¤ элементов форм (в частности дл¤ checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы дл¤ текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	background-color: #f8f8f3;
+	font: 1em/1.3 Georgia, serif, Times, "Times New Roman"; 
+	color: #5b584c;
+}
+a, a:visited { /* пор¤док правил дл¤ ссылок имеет значение */
+	color: #f45a40;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+.central-page-box{
+	max-width: 923px; margin: 0 auto;
+}
+
+.header-box{
+
+}
+	.header-top{
+		margin:27px 0 2px 2px;
+	}
+		.header-top .logo{
+			float: left; color: #ffffff; background: #bf3a16; padding: 14px 17px; font: 2em Georgia, serif, Times, "Times New Roman"; text-transform:uppercase; font-style:italic;
+		}
+
+		.header-top .tagline{
+			float:right; font: 1.125em Georgia, serif, Times, "Times New Roman"; font-style:italic; color: #000000; padding:23px 10px; 
+		}
+		.header-top .tagline span{
+			color: #792913;
+		}
+
+.menu-line{
+	background: url(../images/menu_bg.jpg) repeat-x; 
+}
+.menu ul{
+	display:table-row;
+}
+.menu ul li{
+	display:table-cell; width:auto; height:59px; text-align:center; vertical-align:bottom; border-right:2px solid #fff;
+}
+.menu ul li:first-child{
+	border-left:2px solid #fff;
+}
+.menu ul li a{
+	color:#000; font-weight:600; height:59px; display:table-cell; width:1000px; vertical-align:middle; text-decoration:none;
+}
+.menu ul li a.golden{
+	color: #b8a84e;	
+}
+.menu ul li a:hover{
+	background: url(../images/menu_hover_bg.jpg) repeat-x; color:#fff;
+}
+.my-slider{
+	padding-top:20px; font-family: "Times New Roman", Georgia, serif, Times; 	
+}
+	.my-slider .left {
+		position:relative; list-style:none;
+	}
+		.my-slider .left p{
+		position:absolute; top:45px; left:30px; font-style:italic; font-size:1.659em; color:#9e6756;
+	}
+		.my-slider .left h1{
+		position:absolute; top:70px; left:30px; font-size:4.976em; color:#000;
+	}		
+		.my-slider .left h2{
+		position:absolute; top:126px; left:105px; font-size:4.976em; color:#bf3a16; 
+	}
+		.my-slider .left h3{
+		position:absolute; top:213px; left:108px; color:#000; font-size:1.659em;
+	}	
+		.my-slider img{
+		float:right; padding-right:25px;		
+	}
+.contact-subscribe{
+	border-top:5px solid #e2e0cf; background:#ebe9d8; padding-top:30px; padding-bottom:40px;
+}
+	.contact-subscribe article{
+		float:left; width:30.3%; padding-left:3.5%;
+	}
+	.contact-subscribe article:first-child{
+		padding-left:2.1%;
+	}
+		.contact-subscribe article h4{
+			font-size:1.75em; color:#000; font-family: "Times New Roman", Georgia, serif, Times;
+		}
+		.contact-subscribe article h5{
+			font-size:1.125em; color:#792913; font-style:italic; margin-bottom:20px; font-family: "Times New Roman", Georgia, serif, Times;
+		}
+		.contact-subscribe article p{
+			font-size:0.875em;
+		}
+		.contact-subscribe article p span{
+			font-weight:600; padding-bottom:20px; display:block;
+		}	
+			.contact-subscribe .subject img{
+				float:left;
+			}
+			.contact-subscribe .subject .contact-subject{
+				float:left;
+			}
+				.subject{
+					margin-top:15px;
+				}
+					.contact-subject{
+						margin-top:10px; margin-left:15px;						
+					}
+						.man a{
+							text-decoration:none; color:#000; font-size:0.875em;
+						}
+						.address a{							
+							color:#bf3a16; font-size:0.875em;
+						}
+						.readmore a{							
+							color:#bf3a16; font-size:0.875em; margin-top:10px; display:block;
+						}
+						a.links{
+							color: #bf3a16;
+							margin-bottom: 9px;
+							display: block;
+							background: url('../images/arrow_bg.png') no-repeat 3px 6px; 
+							padding-left: 20px;	
+							font-size:0.875em;
+						}
+						.subscribe-form{
+							background:#bf3a16; border-radius:3px; padding: 5px 5px 11px 15px; margin-top:20px;   
+						}
+							.subscribe-form h3{
+								color:#fff; font-size:2em;
+							}
+							.subscribe-form input[type="text"]{
+								width:70%; font-size:0.875em; padding:3px 20px; box-sizing:border-box; border:none; border-radius:5px; color:#504e4c;  
+							}
+							.subscribe-form input[type="submit"]{
+								padding:3px 10px; font-size:0.875em; background:#f7931d; box-sizing:border-box; border:none; border-radius:5px; color:#fff; font-weight:600; cursor:pointer;
+							}
+							a.unsubscribe{
+								display:block; margin-top:5px; color:#fff;
+							}
+.solutions-line{
+	background:#dad5bb; padding-top:25px; padding-bottom:30px;
+}
+	.solutions article{
+		float:left; width:31.4%; margin-left:1.9%;
+	}
+		.solutions article h4{
+			font-size:1.75em; color:#000; font-family: "Times New Roman", Georgia, serif, Times; 
+		}							
+		a.moremore{
+			color: #5b594c;
+			margin-top: 25px;
+			display: block;
+			font-size:0.875em;			
+		}			
+	.footer-line p{
+		font-size:0.875em; color:#5b594c; padding: 25px 0px 25px 15px;
+	}
+	.footer-line a{
+		color:#bf3a16; text-decoration:none;
+	}
+	.footer-line a:hover{
+		text-decoration:underline;
+	}	
+
+/* медиазапросы */
+@media screen and (max-width:850px){
+		.my-slider .left p{
+		top:138px; left:10px; font-size:1.2em; font-weight:600;
+	}
+		.my-slider .left h1{
+		top:154px; left:8px; font-size:3.5em;
+	}		
+		.my-slider .left h2{
+		top:197px; left:73px; font-size:3.5em;
+	}
+		.my-slider .left h3{
+		top:256px; left:75px; font-size:1.2em;
+	}	
+		.my-slider img{
+		padding-right:10px;		
+	}	
+}
+@media screen and (max-width:630px){
+	.header-top{
+		margin:2px 0 2px 2px;
+	}	
+	
+.menu-line{
+	background: url(../images/menu_bg1.jpg) repeat-x; 
+}	
+.menu ul li{
+	height:35px;
+}
+.menu ul li a{
+	height:35px;
+}
+.menu ul li a:hover{
+	background: url(../images/menu_hover_bg1.jpg) repeat-x; color:#fff;
+}	
+
+.my-slider{
+	padding-top:5px;
+}
+		.my-slider .left h1{
+		color:#898683;
+	}
+		.my-slider .left h3{
+		color:#898683;
+	}
+
+.contact-subscribe{
+	padding-top:5px; padding-bottom:10px;
+}	
+	.contact-subscribe article{
+		width:32%; padding-left:1%;
+	}
+	.contact-subscribe article:first-child{
+		padding-left:1%;
+	}
+	
+.solutions-line{
+	padding-top:10px; padding-bottom:10px;
+}
+	.solutions article{
+		width:32.8%; margin-left:0.5%;
+	}	
+	
+	.footer-line p{
+		padding: 10px 0px 10px 10px;
+	}	
+}
+@media screen and (max-width:590px){
+	.subscribe-form{
+		text-align:center;  
+	}
+		.subscribe-form input[type="text"]{
+			width:100%;
+		}
+		.subscribe-form input[type="submit"]{
+			margin-top:5px;
+		}		
+}
+@media screen and (max-width:540px){
+	.contact-subscribe article{
+		width:98%; padding-left:1%; border-bottom:1px solid #898683; padding-bottom:5px;
+	}
+	.contact-subscribe article:first-child{
+		padding-left:1%; border-bottom:1px solid #898683;
+	}
+	.solutions article{
+		width:99%; margin-left:0.5%; border-bottom:1px solid #898683; padding-bottom:5px; 
+	}	
+
+.contact-subscribe article h5 {
+    margin-bottom: 7px;
+}	
+
+.contact-subscribe article p span {
+    padding-bottom: 7px;
+}
+}
+@media screen and (max-width:460px){
+		.header-top .logo{
+			padding: 5px 5px;
+		}
+
+		.header-top .tagline{
+			font-weight:600; font: 0.875em Georgia, serif, Times, "Times New Roman"; padding:15px 5px; 
+		}	
+		
+		.my-slider .left p{
+		top:113px; left:10px; font-size:1em;
+	}
+		.my-slider .left h1{
+		top:121px; left:8px; font-size:3em;
+	}		
+		.my-slider .left h2{
+		top:148px; left:73px; font-size:3em;
+	}
+		.my-slider .left h3{
+		top:192px; left:75px; font-size:1em; font-weight:600;
+	}	
+		.my-slider img{
+		padding-right:0px;		
+	}			
+}
+
+
+
+
